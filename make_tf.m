@@ -1,5 +1,4 @@
-clear all
-
+display('transfer functions computing...');
 T1 = [0.02 0.05 0.1 0.2 0.3 0.5 0.7 1 1.3 1.5 2 4 6 8 10 20 50 100 200 500 1000];
 for i = 1:21;
     G1(i) = tf(1,[T1(i) 1],'InputDelay',1);
