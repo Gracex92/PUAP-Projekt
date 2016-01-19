@@ -1,4 +1,4 @@
-display('transfer function extimation computing...');
+display('transfer function estimation computing...');
 %% G1 estimation
 G_size = 21;
 G_temp = G1;
@@ -9,15 +9,16 @@ for i = 1:G_size
    data = iddata(output,input,0.01);
    sys = tfest(data,2,0);
    G_est{1,i} = sys;
-   if (draw_plot_flag)
+   if (draw_aproximation)
         figure_handler = figure();
         hold on;
         step(G_temp(i));
         step(G_est{i});
+        legend('obiekt idealny','obiekt aproksymowany');
    end
-   if (save_plot_flag)
+   if (save_aproximation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/',num2str(gl_figure_counter),'.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/G1_',num2str(i),'_est.tiff')]);
         close;
    end
 end
@@ -34,15 +35,16 @@ for i = 1:G_size
    data = iddata(output,input,0.01);
    sys = tfest(data,2,0);
    G_est{1,i} = sys;
-   if (draw_plot_flag)
+   if (draw_aproximation)
         figure_handler = figure();
         hold on;
         step(G_temp(i));
         step(G_est{i});
+        legend('obiekt idealny','obiekt aproksymowany');
    end
-   if (save_plot_flag)
+   if (save_aproximation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/',num2str(gl_figure_counter),'.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/G2_',num2str(i),'_est.tiff')]);
         close;
    end
 end
@@ -59,15 +61,16 @@ for i = 1:G_size
    data = iddata(output,input,0.01);
    sys = tfest(data,2,0);
    G_est{1,i} = sys;
-   if (draw_plot_flag)
+   if (draw_aproximation)
         figure_handler = figure();
         hold on;
         step(G_temp(i));
         step(G_est{i});
+        legend('obiekt idealny','obiekt aproksymowany');
    end
-   if (save_plot_flag)
+   if (save_aproximation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/',num2str(gl_figure_counter),'.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/G3_',num2str(i),'_est.tiff')]);
         close;
    end
 end
@@ -84,15 +87,16 @@ for i = 1:G_size
    data = iddata(output,input,0.01);
    sys = tfest(data,2,0);
    G_est{1,i} = sys;
-   if (draw_plot_flag)
+   if (draw_aproximation)
         figure_handler = figure();
         hold on;
         step(G_temp(i));
         step(G_est{i});
+        legend('obiekt idealny','obiekt aproksymowany');
    end
-   if (save_plot_flag)
+   if (save_aproximation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/',num2str(gl_figure_counter),'.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/G4_',num2str(i),'_est.tiff')]);
         close;
    end
 end
@@ -109,15 +113,16 @@ for i = 1:G_size
    data = iddata(output,input,0.01);
    sys = tfest(data,2,0);
    G_est{1,i} = sys;
-   if (draw_plot_flag)
+   if (draw_aproximation)
         figure_handler = figure();
         hold on;
         step(G_temp(i));
         step(G_est{i});
+        legend('obiekt idealny','obiekt aproksymowany');
    end
-   if (save_plot_flag)
+   if (save_aproximation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/',num2str(gl_figure_counter),'.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/G5_',num2str(i),'_est.tiff')]);
         close;
    end
 end
@@ -134,15 +139,16 @@ for i = 1:G_size
    data = iddata(output,input,0.01);
    sys = tfest(data,2,0);
    G_est{1,i} = sys;
-   if (draw_plot_flag)
+   if (draw_aproximation)
         figure_handler = figure();
         hold on;
         step(G_temp(i));
         step(G_est{i});
+        legend('obiekt idealny','obiekt aproksymowany');
    end
-   if (save_plot_flag)
+   if (save_aproximation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/',num2str(gl_figure_counter),'.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/G6_',num2str(i),'_est.tiff')]);
         close;
    end
 end
@@ -161,15 +167,16 @@ for i = 1:G_size1
        data = iddata(output,input,0.01);
        sys = tfest(data,2,0);
        G_est{i,j} = sys;
-       if (draw_plot_flag)
+       if (draw_aproximation)
             figure_handler = figure();
             hold on;
-            step(G_temp(i));
-            step(G_est{i});
+            step(G_temp(i,j));
+            step(G_est{i,j});
+            legend('obiekt idealny','obiekt aproksymowany');
        end
-       if (save_plot_flag)
+       if (save_aproximation)
             gl_figure_counter = gl_figure_counter + 1;
-            saveas(figure_handler,[pwd strcat('/wykresy/estymacje/',num2str(gl_figure_counter),'.tiff')]);
+            saveas(figure_handler,[pwd strcat('/wykresy/estymacje/G7_',num2str(i),'_',num2str(j),'_est.tiff')]);
             close;
        end
     end
@@ -187,15 +194,16 @@ for i = 1:G_size
    data = iddata(output,input,0.01);
    sys = tfest(data,2,0);
    G_est{1,i} = sys;
-   if (draw_plot_flag)
+   if (draw_aproximation)
         figure_handler = figure();
         hold on;
         step(G_temp(i));
         step(G_est{i});
+        legend('obiekt idealny','obiekt aproksymowany');
    end
-   if (save_plot_flag)
+   if (save_aproximation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/',num2str(gl_figure_counter),'.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/G8_',num2str(i),'_est.tiff')]);
         close;
    end
 end
@@ -212,15 +220,16 @@ for i = 1:G_size
    data = iddata(output,input,0.01);
    sys = tfest(data,2,0);
    G_est{1,i} = sys;
-   if (draw_plot_flag)
+   if (draw_aproximation)
         figure_handler = figure();
         hold on;
         step(G_temp(i));
         step(G_est{i});
+        legend('obiekt idealny','obiekt aproksymowany');
    end
-   if (save_plot_flag)
+   if (save_aproximation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/',num2str(gl_figure_counter),'.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/estymacje/G9_',num2str(i),'_est.tiff')]);
         close;
    end
 end
