@@ -1,5 +1,5 @@
 gl_figure_counter = 0;
-draw_aproximation = false;
-save_aproximation = false;
-draw_simulation = false;
-save_simulation = false;
+draw_aproximation = true;
+save_aproximation = true;
+draw_simulation = true;
+save_simulation = true;

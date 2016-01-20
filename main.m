@@ -1,15 +1,14 @@
 %% glowny skrypt uruchamiajacy poszczegolne czesci programu
-% clear all;
-% close all;
+clear all;
+close all;
+
+%% ustawienia symulacji
 config
-if ~exist('G1')
-    make_tf
-end
-if ~exist('G1_est')
-    object_estimation_for_MO
-end
+%% wyznaczanie transmitancji oryginalnych obiektów
+make_tf
+%% badanie metody MO
+object_estimation_for_MO
 MO_test
-if ~exist('G1_est')
-    object_estimation_for_SO
-end
+%% badanie metody SO
+object_estimation_for_SO
 SO_test
