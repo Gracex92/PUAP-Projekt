@@ -19,6 +19,9 @@ for i = 1:G_size
    if (draw_simulation)
         figure_handler = figure();
         hold on;
+        plot(input.time,steer.signals.values);
+        title('Wartoœæ sygna³u steruj¹cego');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
@@ -26,7 +29,7 @@ for i = 1:G_size
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/symulacje/G1_',num2str(i),'_SO.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/sterowania/G1_',num2str(i),'_SO.tiff')]);
         close;
    end
 end
@@ -52,6 +55,9 @@ for i = 1:G_size
    if (draw_simulation)
         figure_handler = figure();
         hold on;
+        plot(input.time,steer.signals.values);
+        title('Wartoœæ sygna³u steruj¹cego');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
@@ -60,7 +66,7 @@ for i = 1:G_size
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/symulacje/G2_',num2str(i),'_SO.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/sterowania/G2_',num2str(i),'_SO.tiff')]);
         close;
    end
 end
@@ -86,6 +92,9 @@ for i = 1:G_size
    if (draw_simulation)
         figure_handler = figure();
         hold on;
+        plot(input.time,steer.signals.values);
+        title('Wartoœæ sygna³u steruj¹cego');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
@@ -93,7 +102,7 @@ for i = 1:G_size
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/symulacje/G3_',num2str(i),'_SO.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/sterowania/G3_',num2str(i),'_SO.tiff')]);
         close;
    end
 end
@@ -119,6 +128,9 @@ for i = 1:G_size
    if (draw_simulation)
         figure_handler = figure();
         hold on;
+        plot(input.time,steer.signals.values);
+        title('Wartoœæ sygna³u steruj¹cego');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
@@ -126,7 +138,7 @@ for i = 1:G_size
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/symulacje/G4_',num2str(i),'_SO.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/sterowania/G4_',num2str(i),'_SO.tiff')]);
         close;
    end
 end
@@ -152,6 +164,9 @@ for i = 1:G_size
    if (draw_simulation)
         figure_handler = figure();
         hold on;
+        plot(input.time,steer.signals.values);
+        title('Wartoœæ sygna³u steruj¹cego');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
@@ -159,7 +174,7 @@ for i = 1:G_size
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/symulacje/G5_',num2str(i),'_SO.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/sterowania/G5_',num2str(i),'_SO.tiff')]);
         close;
    end
 end
@@ -185,6 +200,9 @@ for i = 1:G_size
    if (draw_simulation)
         figure_handler = figure();
         hold on;
+        plot(input.time,steer.signals.values);
+        title('Wartoœæ sygna³u steruj¹cego');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
@@ -192,7 +210,7 @@ for i = 1:G_size
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/symulacje/G6_',num2str(i),'_SO.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/sterowania/G6_',num2str(i),'_SO.tiff')]);
         close;
    end
 end
@@ -220,14 +238,17 @@ for j = 1:G_size
        if (draw_simulation)
             figure_handler = figure();
             hold on;
-            plot(input.time,input.signals.values);
-            plot(output.time,output.signals.values,'r');
-            title('Symulacja zamkniêtej pêtli sterowania');
-            legend('wartoœæ zadana','wyjœcie z obiektu');
+        plot(input.time,steer.signals.values);
+        title('Wartoœæ sygna³u steruj¹cego');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
+        plot(input.time,input.signals.values);
+        plot(output.time,output.signals.values,'r');
+        title('Symulacja zamkniêtej pêtli sterowania');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
        end
        if (save_simulation)
             gl_figure_counter = gl_figure_counter + 1;
-            saveas(figure_handler,[pwd strcat('/wykresy/symulacje/G7_',num2str(j),'_',num2str(i),'_SO.tiff')]);
+            saveas(figure_handler,[pwd strcat('/wykresy/sterowania/G7_',num2str(j),'_',num2str(i),'_SO.tiff')]);
             close;
        end
     end
@@ -257,6 +278,9 @@ for i = 1:G_size
    if (draw_simulation)
         figure_handler = figure();
         hold on;
+        plot(input.time,steer.signals.values);
+        title('Wartoœæ sygna³u steruj¹cego');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
@@ -264,7 +288,7 @@ for i = 1:G_size
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/symulacje/G8_',num2str(i),'_SO.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/sterowania/G8_',num2str(i),'_SO.tiff')]);
         close;
    end
 end
@@ -288,6 +312,9 @@ for i = 1:G_size
    if (draw_simulation)
         figure_handler = figure();
         hold on;
+        plot(input.time,steer.signals.values);
+        title('Wartoœæ sygna³u steruj¹cego');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
@@ -295,7 +322,7 @@ for i = 1:G_size
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
-        saveas(figure_handler,[pwd strcat('/wykresy/symulacje/G9_',num2str(i),'_SO.tiff')]);
+        saveas(figure_handler,[pwd strcat('/wykresy/sterowania/G9_',num2str(i),'_SO.tiff')]);
         close;
    end
 end
