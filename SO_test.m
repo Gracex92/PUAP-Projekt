@@ -22,7 +22,7 @@ for i = 1:G_size
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
-        legend('sterowanie','wyjœcie z obiektu');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
@@ -55,7 +55,7 @@ for i = 1:G_size
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
-        legend('sterowanie','wyjœcie z obiektu');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
         
    end
    if (save_simulation)
@@ -89,7 +89,7 @@ for i = 1:G_size
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
-        legend('sterowanie','wyjœcie z obiektu');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
@@ -122,7 +122,7 @@ for i = 1:G_size
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
-        legend('sterowanie','wyjœcie z obiektu');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
@@ -155,7 +155,7 @@ for i = 1:G_size
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
-        legend('sterowanie','wyjœcie z obiektu');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
@@ -188,7 +188,7 @@ for i = 1:G_size
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
-        legend('sterowanie','wyjœcie z obiektu');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
@@ -223,7 +223,7 @@ for j = 1:G_size
             plot(input.time,input.signals.values);
             plot(output.time,output.signals.values,'r');
             title('Symulacja zamkniêtej pêtli sterowania');
-            legend('sterowanie','wyjœcie z obiektu');
+            legend('wartoœæ zadana','wyjœcie z obiektu');
        end
        if (save_simulation)
             gl_figure_counter = gl_figure_counter + 1;
@@ -260,7 +260,7 @@ for i = 1:G_size
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
-        legend('sterowanie','wyjœcie z obiektu');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
@@ -291,7 +291,7 @@ for i = 1:G_size
         plot(input.time,input.signals.values);
         plot(output.time,output.signals.values,'r');
         title('Symulacja zamkniêtej pêtli sterowania');
-        legend('sterowanie','wyjœcie z obiektu');
+        legend('wartoœæ zadana','wyjœcie z obiektu');
    end
    if (save_simulation)
         gl_figure_counter = gl_figure_counter + 1;
